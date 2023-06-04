@@ -1,5 +1,5 @@
 ---
-pagination: 
+pagination:
     data: 'docs'
     size: 1
     alias: 'doc'
@@ -15,17 +15,5 @@ tags: documents
 
 <hr />
 
-<p>Title: "{{ doc.title }}"</p>
-<p> ID: "<a href="https://docs.google.com/document/d/{{ doc.documentId }}">{{ doc.documentId }}</a>"</p>
-
-<div>{% for folder in doc.tree %}
-{% if loop.first %}
-<span>/</span>
-{% endif %}
-<a href="https://drive.google.com/drive/folders/{{ folder.id }}">{{ folder.name }}</a>
-<span>/</span>
-{% if loop.last %}
-<a href="https://docs.google.com/document/d/{{ doc.documentId }}">{{ doc.title }}</a>
-{% endif %}
-{% endfor %}
+<p><a href="https://docs.google.com/document/d/{{ doc.documentId }}">Edit Google Doc content</a></p>
 </div>
