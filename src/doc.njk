@@ -10,8 +10,11 @@ eleventyComputed:
     title: "{{ doc.title }}"
 tags: documents
 ---
-
-{{ doc.html | safe }}
+<div class="container">
+    <article class="long-form-copy">
+        {{ doc.html | safe }}
+    </article>
+</div>
 
 <hr />
 

@@ -1,0 +1,13 @@
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3 { font-weight: 900; }
+
+.container {
+    display: block;
+    max-width: 90ch;
+    margin: 0 auto;
+}
+
+.long-form-copy {}
