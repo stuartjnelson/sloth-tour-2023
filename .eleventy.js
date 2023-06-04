@@ -14,7 +14,6 @@
  * limitations under the License.
  */
 const { EleventyRenderPlugin } = require("@11ty/eleventy");
-const eleventyGoogleFonts = require("eleventy-google-fonts");
 
 require("dotenv").config();
 
@@ -22,7 +21,6 @@ module.exports = function (eleventyConfig) {
   // Used solely to insert README.md into the index page
   eleventyConfig.addPlugin(EleventyRenderPlugin);
   eleventyConfig.addWatchTarget("README.md");
-  eleventyConfig.addPlugin(eleventyGoogleFonts);
 
   eleventyConfig.addPassthroughCopy("./src/styles/style.css");
 
